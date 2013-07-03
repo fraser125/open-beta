@@ -1,4 +1,7 @@
-The Drone is a portable open source game controller that is platform agnostic. One controller for all your gaming whether it be on a Smartphone, SmartTV, Tablet, PC or Mac. Write custom configs, learn to code and update the firmware. The Drone is meant to get smarter and smarter and can even emulate other controllers on the market. Connect as a serial device, mouse, keyboard, keyboard mouse, joystick or gamepad. 
+The Drone is a portable open source game controller that is platform agnostic. One controller for all your gaming whether
+it be on a Smartphone, SmartTV, Tablet, PC or Mac. Write custom configs, learn to code and update the firmware. The Drone
+is meant to get smarter and smarter and can even emulate other controllers on the market. Connect as a serial device,
+mouse, keyboard, keyboard mouse, joystick or gamepad. 
 
 We’re in open beta and encourage you to take a look at the code and help us make the Drone the best product out there.
 
