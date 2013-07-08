@@ -137,10 +137,8 @@ const struct ControllerConfiguration DRONE_KEYBOARD_MOUSE_CONFIG = {
 				.button_type = BUTTON_TYPE_DIGITAL
 			},
 			.keyboard_and_mouse = {
-				.input_type = INPUT_TYPE_KEYBOARD
-			},
-			.button_down = {
-				.scan_code = 'p'-'a'+4
+				.input_type = INPUT_TYPE_MOUSE,
+				.mouse_buttons = MOUSE_BUTTON_RIGHT
 			}
 		},
 		{ // LB
@@ -148,10 +146,8 @@ const struct ControllerConfiguration DRONE_KEYBOARD_MOUSE_CONFIG = {
 				.button_type = BUTTON_TYPE_DIGITAL
 			},
 			.keyboard_and_mouse = {
-				.input_type = INPUT_TYPE_KEYBOARD
-			},
-			.button_down = {
-				.scan_code = 'q'-'a'+4
+				.input_type = INPUT_TYPE_MOUSE,
+				.mouse_buttons = MOUSE_BUTTON_LEFT
 			}
 		},
 		{ // RT

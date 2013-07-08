@@ -487,17 +487,17 @@ Disassembly of section .text:
      3c4:	d0 82       	st	Z, r13
      3c6:	50 96       	adiw	r26, 0x10	; 16
      3c8:	ec 92       	st	X, r14
-     3ca:	4a 83       	std	Y+2, r20	; 0x02
-     3cc:	40 83       	st	Z, r20
-     3ce:	48 8b       	std	Y+16, r20	; 0x10
-     3d0:	d9 01       	movw	r26, r18
-     3d2:	12 96       	adiw	r26, 0x02	; 2
-     3d4:	6c 93       	st	X, r22
-     3d6:	12 97       	sbiw	r26, 0x02	; 2
-     3d8:	60 83       	st	Z, r22
-     3da:	50 96       	adiw	r26, 0x10	; 16
-     3dc:	4c 93       	st	X, r20
-     3de:	50 97       	sbiw	r26, 0x10	; 16
+     3ca:	d9 01       	movw	r26, r18
+     3cc:	12 96       	adiw	r26, 0x02	; 2
+     3ce:	6c 93       	st	X, r22
+     3d0:	12 97       	sbiw	r26, 0x02	; 2
+     3d2:	60 83       	st	Z, r22
+     3d4:	50 96       	adiw	r26, 0x10	; 16
+     3d6:	4c 93       	st	X, r20
+     3d8:	50 97       	sbiw	r26, 0x10	; 16
+     3da:	4a 83       	std	Y+2, r20	; 0x02
+     3dc:	40 83       	st	Z, r20
+     3de:	48 8b       	std	Y+16, r20	; 0x10
      3e0:	0a 83       	std	Y+2, r16	; 0x02
      3e2:	00 83       	st	Z, r16
      3e4:	18 8a       	std	Y+16, r1	; 0x10
