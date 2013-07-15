@@ -1,7 +1,7 @@
 Archive member included because of file (symbol)
 
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_divmodhi4.o)
-                              src/shared.o (__divmodhi4)
+                              src/configurations/keyboard_mouse.o (__divmodhi4)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_udivmodsi4.o)
                               src/RGB_LED.o (__udivmodsi4)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
@@ -41,7 +41,7 @@ Allocating common symbols
 Common symbol       size              file
 
 bios                0x1               src/main.o
-global_header       0x87              src/bios.o
+global_header       0x8               src/bios.o
 turnedOn            0x1               src/main.o
 pulse               0x1               src/main.o
 sleepmgr_locks      0x6               src/asf/common/services/sleepmgr/xmega/sleepmgr.o
@@ -119,14 +119,6 @@ Discarded input sections
  .bss           0x00000000        0x0 src/drone_keyboard_mouse_config.o
  .text          0x00000000        0x0 src/drone_ssf_arcade_config.o
  .bss           0x00000000        0x0 src/drone_ssf_arcade_config.o
- .text          0x00000000        0x0 src/drone_ssf_gamepad_config.o
- .bss           0x00000000        0x0 src/drone_ssf_gamepad_config.o
- .rodata.DRONE_SSF_GAMEPAD_CONFIG
-                0x00000000       0xab src/drone_ssf_gamepad_config.o
- .text          0x00000000        0x0 src/drone_xplay_config.o
- .bss           0x00000000        0x0 src/drone_xplay_config.o
- .rodata.DRONE_XPLAY_CONFIG
-                0x00000000       0xab src/drone_xplay_config.o
  .text          0x00000000        0x0 src/joysticks.o
  .bss           0x00000000        0x0 src/joysticks.o
  .text          0x00000000        0x0 src/ManufactureValidation.o
@@ -409,8 +401,6 @@ Discarded input sections
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_divmodhi4.o)
  .text.libgcc.mul
                 0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_divmodhi4.o)
- .text.libgcc.div
-                0x00000000       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_divmodhi4.o)
  .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_divmodhi4.o)
  .text.libgcc.prologue
                 0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_divmodhi4.o)
@@ -483,8 +473,6 @@ Discarded input sections
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_udivmodhi4.o)
  .text.libgcc.mul
                 0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_udivmodhi4.o)
- .text.libgcc.div
-                0x00000000       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_udivmodhi4.o)
  .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_udivmodhi4.o)
  .text.libgcc.prologue
                 0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_udivmodhi4.o)
@@ -571,8 +559,6 @@ LOAD src/drone_joystick_config.o
 LOAD src/drone_keyboard_config.o
 LOAD src/drone_keyboard_mouse_config.o
 LOAD src/drone_ssf_arcade_config.o
-LOAD src/drone_ssf_gamepad_config.o
-LOAD src/drone_xplay_config.o
 LOAD src/joysticks.o
 LOAD src/ManufactureValidation.o
 LOAD src/powerControl.o
@@ -694,7 +680,7 @@ LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x42ee
+.text           0x00000000     0x42f2
  *(.vectors)
  .vectors       0x00000000      0x1c8 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
                 0x00000000                __vector_default
@@ -921,472 +907,479 @@ LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8
                 0x00000a9a                commAC
  .text.commRC   0x00000ab6       0x74 src/comm.o
                 0x00000ab6                commRC
- .text.commWG   0x00000b2a       0x72 src/comm.o
+ .text.commWG   0x00000b2a       0x7a src/comm.o
                 0x00000b2a                commWG
- .text.commAG   0x00000b9c       0x1c src/comm.o
-                0x00000b9c                commAG
+ .text.commAG   0x00000ba4       0x1c src/comm.o
+                0x00000ba4                commAG
  .text.processComm
-                0x00000bb8       0xdc src/comm.o
-                0x00000bb8                processComm
+                0x00000bc0       0xdc src/comm.o
+                0x00000bc0                processComm
  .text.readGlobalHeader
-                0x00000c94        0xe src/configurations.o
-                0x00000c94                readGlobalHeader
+                0x00000c9c        0xe src/configurations.o
+                0x00000c9c                readGlobalHeader
  .text.writeGlobalHeader
-                0x00000ca2        0xe src/configurations.o
-                0x00000ca2                writeGlobalHeader
+                0x00000caa        0xe src/configurations.o
+                0x00000caa                writeGlobalHeader
  .text.readControllerConfig
-                0x00000cb0       0x14 src/configurations.o
-                0x00000cb0                readControllerConfig
+                0x00000cb8       0x12 src/configurations.o
+                0x00000cb8                readControllerConfig
  .text.writeControllerConfig
-                0x00000cc4       0x14 src/configurations.o
-                0x00000cc4                writeControllerConfig
+                0x00000cca       0x12 src/configurations.o
+                0x00000cca                writeControllerConfig
  .text.loadConfiguration
-                0x00000cd8       0xb6 src/configurations.o
-                0x00000cd8                loadConfiguration
+                0x00000cdc       0xb4 src/configurations.o
+                0x00000cdc                loadConfiguration
  .text.displayWhichConfiguration
-                0x00000d8e       0x76 src/configurations.o
-                0x00000d8e                displayWhichConfiguration
+                0x00000d90       0x76 src/configurations.o
+                0x00000d90                displayWhichConfiguration
  .text.whichConfiguration
-                0x00000e04       0x94 src/configurations.o
-                0x00000e04                whichConfiguration
+                0x00000e06       0x94 src/configurations.o
+                0x00000e06                whichConfiguration
  .text.gamepadInit
-                0x00000e98        0xc src/configurations/gamepad.o
-                0x00000e98                gamepadInit
+                0x00000e9a        0xc src/configurations/gamepad.o
+                0x00000e9a                gamepadInit
  .text.gamepadReport
-                0x00000ea4       0xd4 src/configurations/gamepad.o
-                0x00000ea4                gamepadReport
+                0x00000ea6       0xd4 src/configurations/gamepad.o
+                0x00000ea6                gamepadReport
  .text.gamepadJoystickHandler
-                0x00000f78       0xd2 src/configurations/gamepad.o
-                0x00000f78                gamepadJoystickHandler
+                0x00000f7a       0xd2 src/configurations/gamepad.o
+                0x00000f7a                gamepadJoystickHandler
  .text.gamepadButtonHandler
-                0x0000104a       0x90 src/configurations/gamepad.o
-                0x0000104a                gamepadButtonHandler
+                0x0000104c       0x90 src/configurations/gamepad.o
+                0x0000104c                gamepadButtonHandler
  .text.jStickInit
-                0x000010da       0x12 src/configurations/j_stick.o
-                0x000010da                jStickInit
+                0x000010dc       0x12 src/configurations/j_stick.o
+                0x000010dc                jStickInit
  .text.jStickReport
-                0x000010ec       0xd4 src/configurations/j_stick.o
-                0x000010ec                jStickReport
+                0x000010ee       0xd4 src/configurations/j_stick.o
+                0x000010ee                jStickReport
  .text.jStickJoystickHandler
-                0x000011c0      0x104 src/configurations/j_stick.o
-                0x000011c0                jStickJoystickHandler
+                0x000011c2      0x104 src/configurations/j_stick.o
+                0x000011c2                jStickJoystickHandler
  .text.jStickButtonHandler
-                0x000012c4       0x90 src/configurations/j_stick.o
-                0x000012c4                jStickButtonHandler
+                0x000012c6       0x90 src/configurations/j_stick.o
+                0x000012c6                jStickButtonHandler
  .text.keyboardInit
-                0x00001354        0xc src/configurations/keyboard.o
-                0x00001354                keyboardInit
+                0x00001356        0xc src/configurations/keyboard.o
+                0x00001356                keyboardInit
  .text.changeButtonPressState
-                0x00001360      0x2ba src/configurations/keyboard.o
-                0x00001360                changeButtonPressState
+                0x00001362      0x2ba src/configurations/keyboard.o
+                0x00001362                changeButtonPressState
  .text.keyboardJoystickHandler
-                0x0000161a      0x134 src/configurations/keyboard.o
-                0x0000161a                keyboardJoystickHandler
+                0x0000161c      0x134 src/configurations/keyboard.o
+                0x0000161c                keyboardJoystickHandler
  .text.keyboardButtonHandler
-                0x0000174e        0x2 src/configurations/keyboard.o
-                0x0000174e                keyboardButtonHandler
+                0x00001750        0x2 src/configurations/keyboard.o
+                0x00001750                keyboardButtonHandler
  .text.keyboardMouseInit
-                0x00001750       0x1a src/configurations/keyboard_mouse.o
-                0x00001750                keyboardMouseInit
+                0x00001752       0x1a src/configurations/keyboard_mouse.o
+                0x00001752                keyboardMouseInit
  .text.changeButtonState
-                0x0000176a      0x2ce src/configurations/keyboard_mouse.o
-                0x0000176a                changeButtonState
+                0x0000176c      0x2ce src/configurations/keyboard_mouse.o
+                0x0000176c                changeButtonState
  .text.keyboardMouseJoystickHandler
-                0x00001a38      0x296 src/configurations/keyboard_mouse.o
-                0x00001a38                keyboardMouseJoystickHandler
+                0x00001a3a      0x276 src/configurations/keyboard_mouse.o
+                0x00001a3a                keyboardMouseJoystickHandler
  .text.keyboadMouseButtonHandler
-                0x00001cce        0x2 src/configurations/keyboard_mouse.o
-                0x00001cce                keyboadMouseButtonHandler
+                0x00001cb0        0x2 src/configurations/keyboard_mouse.o
+                0x00001cb0                keyboadMouseButtonHandler
  .text.sendDBGChar
-                0x00001cd0        0xa src/debug.o
-                0x00001cd0                sendDBGChar
+                0x00001cb2        0xa src/debug.o
+                0x00001cb2                sendDBGChar
  .text.sendDBGString
-                0x00001cda       0x16 src/debug.o
-                0x00001cda                sendDBGString
+                0x00001cbc       0x16 src/debug.o
+                0x00001cbc                sendDBGString
  .text.sendDBGLine
-                0x00001cf0        0xa src/debug.o
-                0x00001cf0                sendDBGLine
+                0x00001cd2        0xa src/debug.o
+                0x00001cd2                sendDBGLine
  .text.setupDbg
-                0x00001cfa       0x66 src/debug.o
-                0x00001cfa                setupDbg
+                0x00001cdc       0x66 src/debug.o
+                0x00001cdc                setupDbg
  .text.__portable_avr_delay_cycles
-                0x00001d60        0xc src/ManufactureValidation.o
+                0x00001d42        0xc src/ManufactureValidation.o
  .text.IsTestMode
-                0x00001d6c        0xe src/ManufactureValidation.o
-                0x00001d6c                IsTestMode
+                0x00001d4e        0xe src/ManufactureValidation.o
+                0x00001d4e                IsTestMode
  .text.RunHandTestProcedure
-                0x00001d7a       0x68 src/ManufactureValidation.o
-                0x00001d7a                RunHandTestProcedure
+                0x00001d5c       0x68 src/ManufactureValidation.o
+                0x00001d5c                RunHandTestProcedure
  .text.ExecuteTest
-                0x00001de2       0x18 src/ManufactureValidation.o
-                0x00001de2                ExecuteTest
+                0x00001dc4       0x18 src/ManufactureValidation.o
+                0x00001dc4                ExecuteTest
  .text.__portable_avr_delay_cycles
-                0x00001dfa        0xc src/powerControl.o
- .text.Wakeup   0x00001e06       0x5c src/powerControl.o
-                0x00001e06                Wakeup
+                0x00001ddc        0xc src/powerControl.o
+ .text.Wakeup   0x00001de8       0x5c src/powerControl.o
+                0x00001de8                Wakeup
  .text.powerOff
-                0x00001e62       0x4c src/powerControl.o
-                0x00001e62                powerOff
+                0x00001e44       0x4c src/powerControl.o
+                0x00001e44                powerOff
  .text.checkForStartUp
-                0x00001eae       0x5a src/powerControl.o
-                0x00001eae                checkForStartUp
- .text.powerOn  0x00001f08       0x18 src/powerControl.o
-                0x00001f08                powerOn
+                0x00001e90       0x5a src/powerControl.o
+                0x00001e90                checkForStartUp
+ .text.powerOn  0x00001eea       0x18 src/powerControl.o
+                0x00001eea                powerOn
  .text.pwm_set_duty_cycle_percent
-                0x00001f20       0x64 src/RGB_LED.o
+                0x00001f02       0x64 src/RGB_LED.o
  .text.setupLEDs
-                0x00001f84       0x52 src/RGB_LED.o
-                0x00001f84                setupLEDs
+                0x00001f66       0x52 src/RGB_LED.o
+                0x00001f66                setupLEDs
  .text.setRedLEDValue
-                0x00001fd6       0x10 src/RGB_LED.o
-                0x00001fd6                setRedLEDValue
+                0x00001fb8       0x10 src/RGB_LED.o
+                0x00001fb8                setRedLEDValue
  .text.setGreenLEDValue
-                0x00001fe6       0x1e src/RGB_LED.o
-                0x00001fe6                setGreenLEDValue
+                0x00001fc8       0x1e src/RGB_LED.o
+                0x00001fc8                setGreenLEDValue
  .text.setBlueLEDValue
-                0x00002004       0x1e src/RGB_LED.o
-                0x00002004                setBlueLEDValue
+                0x00001fe6       0x1e src/RGB_LED.o
+                0x00001fe6                setBlueLEDValue
  .text.setLEDValue
-                0x00002022       0x24 src/RGB_LED.o
-                0x00002022                setLEDValue
+                0x00002004       0x24 src/RGB_LED.o
+                0x00002004                setLEDValue
  .text.getSystemTime
-                0x00002046       0x24 src/system_time.o
-                0x00002046                getSystemTime
+                0x00002028       0x24 src/system_time.o
+                0x00002028                getSystemTime
  .text.tickSystemTime
-                0x0000206a       0x2e src/system_time.o
-                0x0000206a                tickSystemTime
+                0x0000204c       0x2e src/system_time.o
+                0x0000204c                tickSystemTime
  .text.startTimeout
-                0x00002098       0x32 src/system_time.o
-                0x00002098                startTimeout
+                0x0000207a       0x32 src/system_time.o
+                0x0000207a                startTimeout
  .text.checkTimeout
-                0x000020ca       0x5a src/system_time.o
-                0x000020ca                checkTimeout
+                0x000020ac       0x5a src/system_time.o
+                0x000020ac                checkTimeout
  .text.cancelTimeout
-                0x00002124        0xc src/system_time.o
-                0x00002124                cancelTimeout
+                0x00002106        0xc src/system_time.o
+                0x00002106                cancelTimeout
  .text.enableSysTick
-                0x00002130        0x8 src/systick.o
-                0x00002130                enableSysTick
+                0x00002112        0x8 src/systick.o
+                0x00002112                enableSysTick
  .text.disableSysTick
-                0x00002138        0x8 src/systick.o
-                0x00002138                disableSysTick
+                0x0000211a        0x8 src/systick.o
+                0x0000211a                disableSysTick
  .text.clearSysTickFlag
-                0x00002140        0xc src/systick.o
-                0x00002140                clearSysTickFlag
+                0x00002122        0xc src/systick.o
+                0x00002122                clearSysTickFlag
  .text.setupSysTick
-                0x0000214c       0x52 src/systick.o
-                0x0000214c                setupSysTick
+                0x0000212e       0x52 src/systick.o
+                0x0000212e                setupSysTick
  .text.setupUsb
-                0x0000219e       0x56 src/usb.o
-                0x0000219e                setupUsb
+                0x00002180       0x56 src/usb.o
+                0x00002180                setupUsb
  .text.sendUSBChar
-                0x000021f4       0x22 src/usb.o
-                0x000021f4                sendUSBChar
+                0x000021d6       0x22 src/usb.o
+                0x000021d6                sendUSBChar
  .text.sendUSBString
-                0x00002216       0x3e src/usb.o
-                0x00002216                sendUSBString
+                0x000021f8       0x3e src/usb.o
+                0x000021f8                sendUSBString
  .text.sendUSBLine
-                0x00002254        0xc src/usb.o
-                0x00002254                sendUSBLine
+                0x00002236        0xc src/usb.o
+                0x00002236                sendUSBLine
  .text.recvUSBString
-                0x00002260        0xc src/usb.o
-                0x00002260                recvUSBString
+                0x00002242        0xc src/usb.o
+                0x00002242                recvUSBString
  .text.__vector_25
-                0x0000226c       0x6c src/usb.o
-                0x0000226c                __vector_25
+                0x0000224e       0x6c src/usb.o
+                0x0000224e                __vector_25
  .text.__vector_26
-                0x000022d8       0x80 src/usb.o
-                0x000022d8                __vector_26
+                0x000022ba       0x80 src/usb.o
+                0x000022ba                __vector_26
  .text.WatchdogInit
-                0x00002358        0xa src/watchdog.o
-                0x00002358                WatchdogInit
+                0x0000233a        0xa src/watchdog.o
+                0x0000233a                WatchdogInit
  .text.WatchdogPet
-                0x00002362        0xa src/watchdog.o
-                0x00002362                WatchdogPet
+                0x00002344        0xa src/watchdog.o
+                0x00002344                WatchdogPet
  .text.WatchdogValidate
-                0x0000236c       0x18 src/watchdog.o
-                0x0000236c                WatchdogValidate
+                0x0000234e       0x18 src/watchdog.o
+                0x0000234e                WatchdogValidate
  .text.WatchDogEnable
-                0x00002384        0xa src/watchdog.o
-                0x00002384                WatchDogEnable
+                0x00002366        0xa src/watchdog.o
+                0x00002366                WatchDogEnable
  .text.WatchdogTaskRunning
-                0x0000238e       0x26 src/watchdog.o
-                0x0000238e                WatchdogTaskRunning
+                0x00002370       0x26 src/watchdog.o
+                0x00002370                WatchdogTaskRunning
  .text.sysclk_init
-                0x000023b4       0x50 src/asf/common/services/clock/xmega/sysclk.o
-                0x000023b4                sysclk_init
+                0x00002396       0x50 src/asf/common/services/clock/xmega/sysclk.o
+                0x00002396                sysclk_init
  .text.sysclk_enable_module
-                0x00002404       0x18 src/asf/common/services/clock/xmega/sysclk.o
-                0x00002404                sysclk_enable_module
+                0x000023e6       0x18 src/asf/common/services/clock/xmega/sysclk.o
+                0x000023e6                sysclk_enable_module
  .text.sysclk_disable_module
-                0x0000241c       0x16 src/asf/common/services/clock/xmega/sysclk.o
-                0x0000241c                sysclk_disable_module
+                0x000023fe       0x16 src/asf/common/services/clock/xmega/sysclk.o
+                0x000023fe                sysclk_disable_module
  .text.adc_enable_clock
-                0x00002432       0x1e src/asf/xmega/drivers/adc/adc.o
-                0x00002432                adc_enable_clock
+                0x00002414       0x1e src/asf/xmega/drivers/adc/adc.o
+                0x00002414                adc_enable_clock
  .text.adc_disable_clock
-                0x00002450       0x1c src/asf/xmega/drivers/adc/adc.o
-                0x00002450                adc_disable_clock
+                0x00002432       0x1c src/asf/xmega/drivers/adc/adc.o
+                0x00002432                adc_disable_clock
  .text.adc_enable
-                0x0000246c       0x2e src/asf/xmega/drivers/adc/adc.o
-                0x0000246c                adc_enable
+                0x0000244e       0x2e src/asf/xmega/drivers/adc/adc.o
+                0x0000244e                adc_enable
  .text.adc_write_configuration
-                0x0000249a       0x86 src/asf/xmega/drivers/adc/xmega_bcd/adc_bcd.o
-                0x0000249a                adc_write_configuration
+                0x0000247c       0x86 src/asf/xmega/drivers/adc/xmega_bcd/adc_bcd.o
+                0x0000247c                adc_write_configuration
  .text.adc_read_configuration
-                0x00002520       0x40 src/asf/xmega/drivers/adc/xmega_bcd/adc_bcd.o
-                0x00002520                adc_read_configuration
+                0x00002502       0x40 src/asf/xmega/drivers/adc/xmega_bcd/adc_bcd.o
+                0x00002502                adc_read_configuration
  .text.adcch_write_configuration
-                0x00002560       0x34 src/asf/xmega/drivers/adc/xmega_bcd/adc_bcd.o
-                0x00002560                adcch_write_configuration
+                0x00002542       0x34 src/asf/xmega/drivers/adc/xmega_bcd/adc_bcd.o
+                0x00002542                adcch_write_configuration
  .text.adcch_read_configuration
-                0x00002594       0x34 src/asf/xmega/drivers/adc/xmega_bcd/adc_bcd.o
-                0x00002594                adcch_read_configuration
+                0x00002576       0x34 src/asf/xmega/drivers/adc/xmega_bcd/adc_bcd.o
+                0x00002576                adcch_read_configuration
  .text.ccp_write_io
-                0x000025c8        0xc src/asf/xmega/drivers/cpu/ccp.o
-                0x000025c8                ccp_write_io
+                0x000025aa        0xc src/asf/xmega/drivers/cpu/ccp.o
+                0x000025aa                ccp_write_io
  .text.nvm_wait_until_ready
-                0x000025d4        0xa src/asf/xmega/drivers/nvm/nvm.o
+                0x000025b6        0xa src/asf/xmega/drivers/nvm/nvm.o
  .text.nvm_issue_command
-                0x000025de       0x20 src/asf/xmega/drivers/nvm/nvm.o
+                0x000025c0       0x20 src/asf/xmega/drivers/nvm/nvm.o
  .text.nvm_eeprom_read_buffer
-                0x000025fe       0x60 src/asf/xmega/drivers/nvm/nvm.o
-                0x000025fe                nvm_eeprom_read_buffer
+                0x000025e0       0x60 src/asf/xmega/drivers/nvm/nvm.o
+                0x000025e0                nvm_eeprom_read_buffer
  .text.nvm_eeprom_flush_buffer
-                0x0000265e       0x1a src/asf/xmega/drivers/nvm/nvm.o
-                0x0000265e                nvm_eeprom_flush_buffer
+                0x00002640       0x1a src/asf/xmega/drivers/nvm/nvm.o
+                0x00002640                nvm_eeprom_flush_buffer
  .text.nvm_eeprom_write_byte
-                0x00002678       0x5e src/asf/xmega/drivers/nvm/nvm.o
-                0x00002678                nvm_eeprom_write_byte
+                0x0000265a       0x5e src/asf/xmega/drivers/nvm/nvm.o
+                0x0000265a                nvm_eeprom_write_byte
  .text.nvm_eeprom_load_page_to_buffer
-                0x000026d6       0x3a src/asf/xmega/drivers/nvm/nvm.o
-                0x000026d6                nvm_eeprom_load_page_to_buffer
+                0x000026b8       0x3a src/asf/xmega/drivers/nvm/nvm.o
+                0x000026b8                nvm_eeprom_load_page_to_buffer
  .text.nvm_eeprom_atomic_write_page
-                0x00002710       0x2c src/asf/xmega/drivers/nvm/nvm.o
-                0x00002710                nvm_eeprom_atomic_write_page
+                0x000026f2       0x2c src/asf/xmega/drivers/nvm/nvm.o
+                0x000026f2                nvm_eeprom_atomic_write_page
  .text.nvm_eeprom_erase_and_write_buffer
-                0x0000273c       0x78 src/asf/xmega/drivers/nvm/nvm.o
-                0x0000273c                nvm_eeprom_erase_and_write_buffer
+                0x0000271e       0x78 src/asf/xmega/drivers/nvm/nvm.o
+                0x0000271e                nvm_eeprom_erase_and_write_buffer
  .text.nvm_read_byte
-                0x000027b4       0x14 src/asf/xmega/drivers/nvm/nvm_asm.o
-                0x000027b4                nvm_read_byte
+                0x00002796       0x14 src/asf/xmega/drivers/nvm/nvm_asm.o
+                0x00002796                nvm_read_byte
  .text.__vector_14
-                0x000027c8       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x000027c8                __vector_14
+                0x000027aa       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x000027aa                __vector_14
  .text.__vector_15
-                0x00002822       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002822                __vector_15
+                0x00002804       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002804                __vector_15
  .text.__vector_16
-                0x0000287c       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x0000287c                __vector_16
+                0x0000285e       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x0000285e                __vector_16
  .text.__vector_17
-                0x000028d6       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x000028d6                __vector_17
+                0x000028b8       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x000028b8                __vector_17
  .text.__vector_18
-                0x00002930       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002930                __vector_18
+                0x00002912       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002912                __vector_18
  .text.__vector_19
-                0x0000298a       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x0000298a                __vector_19
+                0x0000296c       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x0000296c                __vector_19
  .text.__vector_20
-                0x000029e4       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x000029e4                __vector_20
+                0x000029c6       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x000029c6                __vector_20
  .text.__vector_21
-                0x00002a3e       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002a3e                __vector_21
+                0x00002a20       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002a20                __vector_21
  .text.__vector_22
-                0x00002a98       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002a98                __vector_22
+                0x00002a7a       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002a7a                __vector_22
  .text.__vector_23
-                0x00002af2       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002af2                __vector_23
+                0x00002ad4       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002ad4                __vector_23
  .text.__vector_77
-                0x00002b4c       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002b4c                __vector_77
+                0x00002b2e       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002b2e                __vector_77
  .text.__vector_78
-                0x00002ba6       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002ba6                __vector_78
+                0x00002b88       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002b88                __vector_78
  .text.__vector_79
-                0x00002c00       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002c00                __vector_79
+                0x00002be2       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002be2                __vector_79
  .text.__vector_80
-                0x00002c5a       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002c5a                __vector_80
+                0x00002c3c       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002c3c                __vector_80
  .text.__vector_81
-                0x00002cb4       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002cb4                __vector_81
+                0x00002c96       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002c96                __vector_81
  .text.__vector_82
-                0x00002d0e       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002d0e                __vector_82
+                0x00002cf0       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002cf0                __vector_82
  .text.__vector_47
-                0x00002d68       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002d68                __vector_47
+                0x00002d4a       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002d4a                __vector_47
  .text.__vector_48
-                0x00002dc2       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002dc2                __vector_48
+                0x00002da4       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002da4                __vector_48
  .text.__vector_49
-                0x00002e1c       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002e1c                __vector_49
+                0x00002dfe       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002dfe                __vector_49
  .text.__vector_50
-                0x00002e76       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002e76                __vector_50
+                0x00002e58       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002e58                __vector_50
  .text.__vector_51
-                0x00002ed0       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002ed0                __vector_51
+                0x00002eb2       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002eb2                __vector_51
  .text.__vector_52
-                0x00002f2a       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002f2a                __vector_52
+                0x00002f0c       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002f0c                __vector_52
  .text.__vector_108
-                0x00002f84       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002f84                __vector_108
+                0x00002f66       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002f66                __vector_108
  .text.__vector_109
-                0x00002fde       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00002fde                __vector_109
+                0x00002fc0       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00002fc0                __vector_109
  .text.__vector_110
-                0x00003038       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00003038                __vector_110
+                0x0000301a       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x0000301a                __vector_110
  .text.__vector_111
-                0x00003092       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00003092                __vector_111
+                0x00003074       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00003074                __vector_111
  .text.__vector_112
-                0x000030ec       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x000030ec                __vector_112
+                0x000030ce       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x000030ce                __vector_112
  .text.__vector_113
-                0x00003146       0x5a src/asf/xmega/drivers/tc/tc.o
-                0x00003146                __vector_113
+                0x00003128       0x5a src/asf/xmega/drivers/tc/tc.o
+                0x00003128                __vector_113
  .text.tc_enable
-                0x000031a0       0x76 src/asf/xmega/drivers/tc/tc.o
-                0x000031a0                tc_enable
+                0x00003182       0x76 src/asf/xmega/drivers/tc/tc.o
+                0x00003182                tc_enable
  .text.tc_disable
-                0x00003216       0x76 src/asf/xmega/drivers/tc/tc.o
-                0x00003216                tc_disable
+                0x000031f8       0x76 src/asf/xmega/drivers/tc/tc.o
+                0x000031f8                tc_disable
  .text.tc_set_overflow_interrupt_callback
-                0x0000328c       0x58 src/asf/xmega/drivers/tc/tc.o
-                0x0000328c                tc_set_overflow_interrupt_callback
+                0x0000326e       0x58 src/asf/xmega/drivers/tc/tc.o
+                0x0000326e                tc_set_overflow_interrupt_callback
  .text.usart_enable_module_clock
-                0x000032e4       0x2a src/asf/xmega/drivers/usart/usart.o
+                0x000032c6       0x2a src/asf/xmega/drivers/usart/usart.o
  .text.usart_putchar
-                0x0000330e       0x10 src/asf/xmega/drivers/usart/usart.o
-                0x0000330e                usart_putchar
+                0x000032f0       0x10 src/asf/xmega/drivers/usart/usart.o
+                0x000032f0                usart_putchar
  .text.usart_set_baudrate
-                0x0000331e      0x1ba src/asf/xmega/drivers/usart/usart.o
-                0x0000331e                usart_set_baudrate
+                0x00003300      0x1ba src/asf/xmega/drivers/usart/usart.o
+                0x00003300                usart_set_baudrate
  .text.usart_init_rs232
-                0x000034d8       0x58 src/asf/xmega/drivers/usart/usart.o
-                0x000034d8                usart_init_rs232
+                0x000034ba       0x58 src/asf/xmega/drivers/usart/usart.o
+                0x000034ba                usart_init_rs232
  .text.wdt_wait_while_busy
-                0x00003530        0xa src/asf/xmega/drivers/wdt/wdt.o
+                0x00003512        0xa src/asf/xmega/drivers/wdt/wdt.o
  .text.wdt_set_timeout_period
-                0x0000353a       0x1e src/asf/xmega/drivers/wdt/wdt.o
-                0x0000353a                wdt_set_timeout_period
+                0x0000351c       0x1e src/asf/xmega/drivers/wdt/wdt.o
+                0x0000351c                wdt_set_timeout_period
  .text.wdt_disable
-                0x00003558        0xe src/asf/xmega/drivers/wdt/wdt.o
-                0x00003558                wdt_disable
+                0x0000353a        0xe src/asf/xmega/drivers/wdt/wdt.o
+                0x0000353a                wdt_disable
  .text.wdt_enable
-                0x00003566       0x10 src/asf/xmega/drivers/wdt/wdt.o
-                0x00003566                wdt_enable
+                0x00003548       0x10 src/asf/xmega/drivers/wdt/wdt.o
+                0x00003548                wdt_enable
  .text.pwm_set_frequency
-                0x00003576       0xd0 src/asf/xmega/services/pwm/pwm.o
-                0x00003576                pwm_set_frequency
+                0x00003558       0xd0 src/asf/xmega/services/pwm/pwm.o
+                0x00003558                pwm_set_frequency
  .text.pwm_init
-                0x00003646      0x156 src/asf/xmega/services/pwm/pwm.o
-                0x00003646                pwm_init
+                0x00003628      0x156 src/asf/xmega/services/pwm/pwm.o
+                0x00003628                pwm_init
  .text.pwm_start
-                0x0000379c       0x92 src/asf/xmega/services/pwm/pwm.o
-                0x0000379c                pwm_start
+                0x0000377e       0x92 src/asf/xmega/services/pwm/pwm.o
+                0x0000377e                pwm_start
  .text.__portable_avr_delay_cycles
-                0x0000382e        0xc src/bluetooth.o
+                0x00003810        0xc src/bluetooth.o
  .text.setupBluetoothFast
-                0x0000383a       0x6a src/bluetooth.o
-                0x0000383a                setupBluetoothFast
+                0x0000381c       0x6a src/bluetooth.o
+                0x0000381c                setupBluetoothFast
  .text.hardwareflowcontrol
-                0x000038a4       0x3c src/bluetooth.o
-                0x000038a4                hardwareflowcontrol
+                0x00003886       0x3c src/bluetooth.o
+                0x00003886                hardwareflowcontrol
  .text.turnBTOn
-                0x000038e0       0x32 src/bluetooth.o
-                0x000038e0                turnBTOn
+                0x000038c2       0x32 src/bluetooth.o
+                0x000038c2                turnBTOn
  .text.bt_exitBypass
-                0x00003912       0x2c src/bluetooth.o
-                0x00003912                bt_exitBypass
+                0x000038f4       0x2c src/bluetooth.o
+                0x000038f4                bt_exitBypass
  .text.sendBTChar
-                0x0000393e       0x2e src/bluetooth.o
-                0x0000393e                sendBTChar
+                0x00003920       0x2e src/bluetooth.o
+                0x00003920                sendBTChar
  .text.sendBTString
-                0x0000396c       0x16 src/bluetooth.o
-                0x0000396c                sendBTString
+                0x0000394e       0x16 src/bluetooth.o
+                0x0000394e                sendBTString
  .text.sendBTCmd
-                0x00003982       0x24 src/bluetooth.o
-                0x00003982                sendBTCmd
+                0x00003964       0x24 src/bluetooth.o
+                0x00003964                sendBTCmd
  .text.initBTComms
-                0x000039a6       0x2c src/bluetooth.o
-                0x000039a6                initBTComms
+                0x00003988       0x2c src/bluetooth.o
+                0x00003988                initBTComms
  .text.turnBTOff
-                0x000039d2       0x22 src/bluetooth.o
-                0x000039d2                turnBTOff
+                0x000039b4       0x22 src/bluetooth.o
+                0x000039b4                turnBTOff
  .text.btFirstRun
-                0x000039f4       0x36 src/bluetooth.o
-                0x000039f4                btFirstRun
+                0x000039d6       0x36 src/bluetooth.o
+                0x000039d6                btFirstRun
  .text.btFactoryReset
-                0x00003a2a       0x26 src/bluetooth.o
-                0x00003a2a                btFactoryReset
+                0x00003a0c       0x26 src/bluetooth.o
+                0x00003a0c                btFactoryReset
  .text.btIsConnected
-                0x00003a50       0x12 src/bluetooth.o
-                0x00003a50                btIsConnected
+                0x00003a32       0x12 src/bluetooth.o
+                0x00003a32                btIsConnected
  .text.btClearAutoConnectList
-                0x00003a62        0xc src/bluetooth.o
-                0x00003a62                btClearAutoConnectList
+                0x00003a44        0xc src/bluetooth.o
+                0x00003a44                btClearAutoConnectList
  .text.BluetoothKeyboardMode
-                0x00003a6e        0x6 src/bluetooth.o
-                0x00003a6e                BluetoothKeyboardMode
+                0x00003a50        0x6 src/bluetooth.o
+                0x00003a50                BluetoothKeyboardMode
  .text.BluetoothComboMode
-                0x00003a74        0x6 src/bluetooth.o
-                0x00003a74                BluetoothComboMode
+                0x00003a56        0x6 src/bluetooth.o
+                0x00003a56                BluetoothComboMode
  .text.BluetoothGamePadMode
-                0x00003a7a        0x6 src/bluetooth.o
-                0x00003a7a                BluetoothGamePadMode
+                0x00003a5c        0x6 src/bluetooth.o
+                0x00003a5c                BluetoothGamePadMode
  .text.BluetoothJoystickMode
-                0x00003a80        0x6 src/bluetooth.o
-                0x00003a80                BluetoothJoystickMode
+                0x00003a62        0x6 src/bluetooth.o
+                0x00003a62                BluetoothJoystickMode
  .text.__portable_avr_delay_cycles
-                0x00003a86        0xc src/main.o
+                0x00003a68        0xc src/main.o
  .text.sysTickCallback
-                0x00003a92       0x30 src/main.o
-                0x00003a92                sysTickCallback
+                0x00003a74       0x30 src/main.o
+                0x00003a74                sysTickCallback
  .text.maintainControllerStatus
-                0x00003ac2       0x6c src/main.o
-                0x00003ac2                maintainControllerStatus
+                0x00003aa4       0x6c src/main.o
+                0x00003aa4                maintainControllerStatus
  .text.selectHandlers
-                0x00003b2e       0xf8 src/main.o
-                0x00003b2e                selectHandlers
+                0x00003b10       0xf8 src/main.o
+                0x00003b10                selectHandlers
  .text.SetupStartPinExternalInterrupt
-                0x00003c26       0x2e src/main.o
-                0x00003c26                SetupStartPinExternalInterrupt
+                0x00003c08       0x2e src/main.o
+                0x00003c08                SetupStartPinExternalInterrupt
  .text.startup.main
-                0x00003c54      0x588 src/main.o
-                0x00003c54                main
+                0x00003c36      0x55c src/main.o
+                0x00003c36                main
  .text.__vector_104
-                0x000041dc       0x74 src/main.o
-                0x000041dc                __vector_104
+                0x00004192       0x74 src/main.o
+                0x00004192                __vector_104
  .text.libgcc.div
-                0x00004250       0x44 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_udivmodsi4.o)
-                0x00004250                __udivmodsi4
+                0x00004206       0x26 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_divmodhi4.o)
+                0x00004206                _div
+                0x00004206                __divmodhi4
+ .text.libgcc.div
+                0x0000422c       0x44 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_udivmodsi4.o)
+                0x0000422c                __udivmodsi4
  .text.libgcc.mul
-                0x00004294       0x18 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_umulhisi3.o)
-                0x00004294                __umulhisi3
+                0x00004270       0x18 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_umulhisi3.o)
+                0x00004270                __umulhisi3
+ .text.libgcc.div
+                0x00004288       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_udivmodhi4.o)
+                0x00004288                __udivmodhi4
  .text.avr-libc
-                0x000042ac       0x1a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(memchr.o)
-                0x000042ac                memchr
+                0x000042b0       0x1a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(memchr.o)
+                0x000042b0                memchr
  .text.avr-libc
-                0x000042c6       0x12 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(memcpy.o)
-                0x000042c6                memcpy
+                0x000042ca       0x12 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(memcpy.o)
+                0x000042ca                memcpy
  .text.avr-libc
-                0x000042d8       0x12 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(strcmp.o)
-                0x000042d8                strcmp
-                0x000042ea                . = ALIGN (0x2)
+                0x000042dc       0x12 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(strcmp.o)
+                0x000042dc                strcmp
+                0x000042ee                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000042ea        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
-                0x000042ea                _exit
-                0x000042ea                exit
+ .fini9         0x000042ee        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+                0x000042ee                _exit
+                0x000042ee                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -1405,11 +1398,11 @@ LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000042ea        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
+ .fini0         0x000042ee        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avrxmega4\libgcc.a(_exit.o)
  *(.fini0)
-                0x000042ee                _etext = .
+                0x000042f2                _etext = .
 
-.data           0x00802000      0x990 load address 0x000042ee
+.data           0x00802000      0x908 load address 0x000042f2
                 0x00802000                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00802000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4/crtx64d3.o
@@ -1439,8 +1432,6 @@ LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8
  .data          0x00802000        0x0 src/drone_keyboard_config.o
  .data          0x00802000        0x0 src/drone_keyboard_mouse_config.o
  .data          0x00802000        0x0 src/drone_ssf_arcade_config.o
- .data          0x00802000        0x0 src/drone_ssf_gamepad_config.o
- .data          0x00802000        0x0 src/drone_xplay_config.o
  .data          0x00802000        0x0 src/joysticks.o
  .data          0x00802000        0x0 src/ManufactureValidation.o
  .data          0x00802000        0x0 src/powerControl.o
@@ -1514,207 +1505,207 @@ LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8
                 0x0080210c       0xab src/drone_gamepad_config.o
                 0x0080210c                DRONE_GAMEPAD_CONFIG
  .rodata.DEFAULT_HEADER
-                0x008021b7       0x87 src/drone_game_configurations.o
+                0x008021b7        0x8 src/drone_game_configurations.o
                 0x008021b7                DEFAULT_HEADER
  .rodata.DRONE_GSRS_CONFIG
-                0x0080223e       0xab src/drone_gsrs_config.o
-                0x0080223e                DRONE_GSRS_CONFIG
+                0x008021bf       0xab src/drone_gsrs_config.o
+                0x008021bf                DRONE_GSRS_CONFIG
  .rodata.DRONE_GTEL_CONFIG
-                0x008022e9       0xab src/drone_gtel_config.o
-                0x008022e9                DRONE_GTEL_CONFIG
+                0x0080226a       0xab src/drone_gtel_config.o
+                0x0080226a                DRONE_GTEL_CONFIG
  .rodata.DRONE_GTEL_IOS_CONFIG
-                0x00802394       0xab src/drone_gtel_ios_config.o
-                0x00802394                DRONE_GTEL_IOS_CONFIG
+                0x00802315       0xab src/drone_gtel_ios_config.o
+                0x00802315                DRONE_GTEL_IOS_CONFIG
  .rodata.DRONE_ICP_CONFIG
-                0x0080243f       0xab src/drone_icp_config.o
-                0x0080243f                DRONE_ICP_CONFIG
+                0x008023c0       0xab src/drone_icp_config.o
+                0x008023c0                DRONE_ICP_CONFIG
  .rodata.DRONE_IOS_CONFIG
-                0x008024ea       0xab src/drone_ios_config.o
-                0x008024ea                DRONE_IOS_CONFIG
+                0x0080246b       0xab src/drone_ios_config.o
+                0x0080246b                DRONE_IOS_CONFIG
  .rodata.DRONE_JOYSTICK_CONFIG
-                0x00802595       0xab src/drone_joystick_config.o
-                0x00802595                DRONE_JOYSTICK_CONFIG
+                0x00802516       0xab src/drone_joystick_config.o
+                0x00802516                DRONE_JOYSTICK_CONFIG
  .rodata.DRONE_KEYBOARD_CONFIG
-                0x00802640       0xab src/drone_keyboard_config.o
-                0x00802640                DRONE_KEYBOARD_CONFIG
+                0x008025c1       0xab src/drone_keyboard_config.o
+                0x008025c1                DRONE_KEYBOARD_CONFIG
  .rodata.DRONE_KEYBOARD_MOUSE_CONFIG
-                0x008026eb       0xab src/drone_keyboard_mouse_config.o
-                0x008026eb                DRONE_KEYBOARD_MOUSE_CONFIG
+                0x0080266c       0xab src/drone_keyboard_mouse_config.o
+                0x0080266c                DRONE_KEYBOARD_MOUSE_CONFIG
  .rodata.DRONE_SSF_ARCADE_CONFIG
-                0x00802796       0xab src/drone_ssf_arcade_config.o
-                0x00802796                DRONE_SSF_ARCADE_CONFIG
+                0x00802717       0xab src/drone_ssf_arcade_config.o
+                0x00802717                DRONE_SSF_ARCADE_CONFIG
  .rodata.str1.1
-                0x00802841       0x18 src/ManufactureValidation.o
+                0x008027c2       0x18 src/ManufactureValidation.o
  .rodata.str1.1
-                0x00802859       0x19 src/usb.o
+                0x008027da       0x19 src/usb.o
  .rodata.str1.1
-                0x00802872        0x2 src/watchdog.o
+                0x008027f3        0x2 src/watchdog.o
  .rodata.str1.1
-                0x00802874       0xc8 src/bluetooth.o
+                0x008027f5       0xc8 src/bluetooth.o
  .rodata.str1.1
-                0x0080293c       0x54 src/main.o
-                                 0x55 (size before relaxing)
+                0x008028bd       0x4a src/main.o
  *(.gnu.linkonce.d*)
-                0x00802990                . = ALIGN (0x2)
-                0x00802990                _edata = .
-                0x00802990                PROVIDE (__data_end, .)
+                0x00802908                . = ALIGN (0x2)
+ *fill*         0x00802907        0x1 
+                0x00802908                _edata = .
+                0x00802908                PROVIDE (__data_end, .)
 
-.bss            0x00802990      0x390
-                0x00802990                PROVIDE (__bss_start, .)
+.bss            0x00802908      0x292
+                0x00802908                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  .bss.analog_config
-                0x00802990        0x6 src/analog.o
+                0x00802908        0x6 src/analog.o
  .bss.analog_channel_config
-                0x00802996        0x3 src/analog.o
- .bss.my_cc     0x00802999        0x2 src/configurations/keyboard_ios.o
- .bss.ghTemp    0x0080299b       0x87 src/comm.o
- .bss.ghAddr    0x00802a22        0x1 src/comm.o
- .bss.ccTemp    0x00802a23       0xab src/comm.o
- .bss.ccAddr    0x00802ace        0x1 src/comm.o
- .bss.my_cc     0x00802acf        0x2 src/configurations/gamepad.o
+                0x0080290e        0x3 src/analog.o
+ .bss.my_cc     0x00802911        0x2 src/configurations/keyboard_ios.o
+ .bss.ghTemp    0x00802913        0x8 src/comm.o
+ .bss.ghAddr    0x0080291b        0x1 src/comm.o
+ .bss.ccTemp    0x0080291c       0xab src/comm.o
+ .bss.ccAddr    0x008029c7        0x1 src/comm.o
+ .bss.my_cc     0x008029c8        0x2 src/configurations/gamepad.o
  .bss.pressed_buttons
-                0x00802ad1        0x4 src/configurations/gamepad.o
+                0x008029ca        0x4 src/configurations/gamepad.o
  .bss.current_xy
-                0x00802ad5        0x4 src/configurations/gamepad.o
+                0x008029ce        0x4 src/configurations/gamepad.o
  .bss.previous_pressed_buttons
-                0x00802ad9        0x4 src/configurations/gamepad.o
+                0x008029d2        0x4 src/configurations/gamepad.o
  .bss.previous_xy
-                0x00802add        0x4 src/configurations/gamepad.o
- .bss.my_cc     0x00802ae1        0x2 src/configurations/j_stick.o
+                0x008029d6        0x4 src/configurations/gamepad.o
+ .bss.my_cc     0x008029da        0x2 src/configurations/j_stick.o
  .bss.pressed_buttons
-                0x00802ae3        0x4 src/configurations/j_stick.o
+                0x008029dc        0x4 src/configurations/j_stick.o
  .bss.current_xy
-                0x00802ae7        0x4 src/configurations/j_stick.o
+                0x008029e0        0x4 src/configurations/j_stick.o
  .bss.previous_pressed_buttons
-                0x00802aeb        0x4 src/configurations/j_stick.o
+                0x008029e4        0x4 src/configurations/j_stick.o
  .bss.previous_xy
-                0x00802aef        0x4 src/configurations/j_stick.o
- .bss.my_cc     0x00802af3        0x2 src/configurations/keyboard.o
+                0x008029e8        0x4 src/configurations/j_stick.o
+ .bss.my_cc     0x008029ec        0x2 src/configurations/keyboard.o
  .bss.state_x.5366
-                0x00802af5        0x2 src/configurations/keyboard.o
+                0x008029ee        0x2 src/configurations/keyboard.o
  .bss.state_y.5367
-                0x00802af7        0x2 src/configurations/keyboard.o
+                0x008029f0        0x2 src/configurations/keyboard.o
  .bss.pressed_buttons
-                0x00802af9        0x4 src/configurations/keyboard.o
- .bss.my_cc     0x00802afd        0x2 src/configurations/keyboard_mouse.o
+                0x008029f2        0x4 src/configurations/keyboard.o
+ .bss.my_cc     0x008029f6        0x2 src/configurations/keyboard_mouse.o
  .bss.mouse_timeout
-                0x00802aff        0x8 src/configurations/keyboard_mouse.o
+                0x008029f8        0x8 src/configurations/keyboard_mouse.o
  .bss.mouse_x.5388
-                0x00802b07        0x1 src/configurations/keyboard_mouse.o
+                0x00802a00        0x1 src/configurations/keyboard_mouse.o
  .bss.mouse_y.5389
-                0x00802b08        0x1 src/configurations/keyboard_mouse.o
+                0x00802a01        0x1 src/configurations/keyboard_mouse.o
  .bss.state_x.5385
-                0x00802b09        0x2 src/configurations/keyboard_mouse.o
+                0x00802a02        0x2 src/configurations/keyboard_mouse.o
  .bss.state_y.5386
-                0x00802b0b        0x2 src/configurations/keyboard_mouse.o
+                0x00802a04        0x2 src/configurations/keyboard_mouse.o
  .bss.mouse_buttons
-                0x00802b0d        0x1 src/configurations/keyboard_mouse.o
+                0x00802a06        0x1 src/configurations/keyboard_mouse.o
  .bss.last_mouse_buttons.5384
-                0x00802b0e        0x1 src/configurations/keyboard_mouse.o
+                0x00802a07        0x1 src/configurations/keyboard_mouse.o
  .bss.pressed_buttons
-                0x00802b0f        0x4 src/configurations/keyboard_mouse.o
+                0x00802a08        0x4 src/configurations/keyboard_mouse.o
  .bss.swapBlueGreen
-                0x00802b13        0x1 src/RGB_LED.o
- .bss.pwm_cfg   0x00802b14       0x15 src/RGB_LED.o
+                0x00802a0c        0x1 src/RGB_LED.o
+ .bss.pwm_cfg   0x00802a0d       0x15 src/RGB_LED.o
  .bss.bootloader
-                0x00802b29        0x2 src/shared.o
-                0x00802b29                bootloader
+                0x00802a22        0x2 src/shared.o
+                0x00802a22                bootloader
  .bss.system_time
-                0x00802b2b        0x4 src/system_time.o
- .bss.rxCB      0x00802b2f        0x6 src/usb.o
- .bss.rxBuffer  0x00802b35       0x40 src/usb.o
- .bss.txCB      0x00802b75        0x6 src/usb.o
- .bss.txBuffer  0x00802b7b       0x20 src/usb.o
+                0x00802a24        0x4 src/system_time.o
+ .bss.rxCB      0x00802a28        0x6 src/usb.o
+ .bss.rxBuffer  0x00802a2e       0x40 src/usb.o
+ .bss.txCB      0x00802a6e        0x6 src/usb.o
+ .bss.txBuffer  0x00802a74       0x20 src/usb.o
  .bss.adca_enable_count
-                0x00802b9b        0x1 src/asf/xmega/drivers/adc/adc.o
+                0x00802a94        0x1 src/asf/xmega/drivers/adc/adc.o
  .bss.tc_tcc0_ovf_callback
-                0x00802b9c        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802a95        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcc0_err_callback
-                0x00802b9e        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802a97        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcc0_cca_callback
-                0x00802ba0        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802a99        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcc0_ccb_callback
-                0x00802ba2        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802a9b        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcc0_ccc_callback
-                0x00802ba4        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802a9d        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcc0_ccd_callback
-                0x00802ba6        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802a9f        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcc1_ovf_callback
-                0x00802ba8        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802aa1        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcc1_err_callback
-                0x00802baa        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802aa3        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcc1_cca_callback
-                0x00802bac        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802aa5        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcc1_ccb_callback
-                0x00802bae        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802aa7        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcd0_ovf_callback
-                0x00802bb0        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802aa9        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcd0_err_callback
-                0x00802bb2        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802aab        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcd0_cca_callback
-                0x00802bb4        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802aad        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcd0_ccb_callback
-                0x00802bb6        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802aaf        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcd0_ccc_callback
-                0x00802bb8        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802ab1        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcd0_ccd_callback
-                0x00802bba        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802ab3        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tce0_ovf_callback
-                0x00802bbc        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802ab5        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tce0_err_callback
-                0x00802bbe        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802ab7        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tce0_cca_callback
-                0x00802bc0        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802ab9        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tce0_ccb_callback
-                0x00802bc2        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802abb        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tce0_ccc_callback
-                0x00802bc4        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802abd        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tce0_ccd_callback
-                0x00802bc6        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802abf        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcf0_ovf_callback
-                0x00802bc8        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802ac1        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcf0_err_callback
-                0x00802bca        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802ac3        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcf0_cca_callback
-                0x00802bcc        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802ac5        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcf0_ccb_callback
-                0x00802bce        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802ac7        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcf0_ccc_callback
-                0x00802bd0        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802ac9        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.tc_tcf0_ccd_callback
-                0x00802bd2        0x2 src/asf/xmega/drivers/tc/tc.o
+                0x00802acb        0x2 src/asf/xmega/drivers/tc/tc.o
  .bss.bluetooth_on
-                0x00802bd4        0x1 src/bluetooth.o
+                0x00802acd        0x1 src/bluetooth.o
  .bss.button_handler_init
-                0x00802bd5        0x2 src/main.o
+                0x00802ace        0x2 src/main.o
  .bss.button_handler
-                0x00802bd7        0x2 src/main.o
+                0x00802ad0        0x2 src/main.o
  .bss.joystick_handler
-                0x00802bd9        0x2 src/main.o
+                0x00802ad2        0x2 src/main.o
  .bss.wdtCheckCount.5554
-                0x00802bdb        0x2 src/main.o
+                0x00802ad4        0x2 src/main.o
  *(COMMON)
- COMMON         0x00802bdd       0x8f src/bios.o
-                0x00802bdd                global_header
-                0x00802c64                biosUnused
- COMMON         0x00802c6c        0x6 src/asf/common/services/sleepmgr/xmega/sleepmgr.o
-                0x00802c6c                sleepmgr_locks
- COMMON         0x00802c72       0xae src/main.o
-                0x00802c72                bios
-                0x00802c73                turnedOn
-                0x00802c74                pulse
-                0x00802c75                ccc
-                0x00802d20                PROVIDE (__bss_end, .)
-                0x000042ee                __data_load_start = LOADADDR (.data)
-                0x00004c7e                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00802ad6       0x10 src/bios.o
+                0x00802ad6                global_header
+                0x00802ade                biosUnused
+ COMMON         0x00802ae6        0x6 src/asf/common/services/sleepmgr/xmega/sleepmgr.o
+                0x00802ae6                sleepmgr_locks
+ COMMON         0x00802aec       0xae src/main.o
+                0x00802aec                bios
+                0x00802aed                turnedOn
+                0x00802aee                pulse
+                0x00802aef                ccc
+                0x00802b9a                PROVIDE (__bss_end, .)
+                0x000042f2                __data_load_start = LOADADDR (.data)
+                0x00004bfa                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00802d20        0x0
-                0x00802d20                PROVIDE (__noinit_start, .)
+.noinit         0x00802b9a        0x0
+                0x00802b9a                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x00802d20                PROVIDE (__noinit_end, .)
-                0x00802d20                _end = .
-                0x00802d20                PROVIDE (__heap_start, .)
+                0x00802b9a                PROVIDE (__noinit_end, .)
+                0x00802b9a                _end = .
+                0x00802b9a                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1796,8 +1787,6 @@ LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8
  .comment       0x00000000       0x30 src/drone_keyboard_config.o
  .comment       0x00000000       0x30 src/drone_keyboard_mouse_config.o
  .comment       0x00000000       0x30 src/drone_ssf_arcade_config.o
- .comment       0x00000000       0x30 src/drone_ssf_gamepad_config.o
- .comment       0x00000000       0x30 src/drone_xplay_config.o
  .comment       0x00000000       0x30 src/joysticks.o
  .comment       0x00000000       0x30 src/ManufactureValidation.o
  .comment       0x00000000       0x30 src/powerControl.o

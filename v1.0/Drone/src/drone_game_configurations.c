@@ -24,13 +24,7 @@ const struct GlobalHeader DEFAULT_HEADER = {
 	.red_percent = 1,
 	.green_percent = 1,
 	.blue_percent = 1,
-	.bluetooth_mode_names = {
-	  "Drone Keyboard",
-	  "Drone iOS",
-	  "Drone GamePad",
-	  "Drone Key Mouse",
-	  "Drone Serial",
-	  "Drone Joystick"
+	.bluetooth_mode_names = {""
 	},
  	.default_configuration = 0,
 	.first_run = 1,

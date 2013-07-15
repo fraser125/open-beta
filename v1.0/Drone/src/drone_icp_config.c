@@ -176,8 +176,8 @@ const struct ControllerConfiguration DRONE_ICP_CONFIG = {
 			.x_max = 4000,
 			.y_min = 2000,
 			.y_max = 4000,
-			.x_deadzone = 475,
-			.y_deadzone = 475
+			.x_deadzone = 300,
+			.y_deadzone = 300
 		},
 		{ // RIGHT JOYSTICK
 			.config = {
@@ -199,8 +199,8 @@ const struct ControllerConfiguration DRONE_ICP_CONFIG = {
 			.x_max = 4000,
 			.y_min = 2000,
 			.y_max = 4000,
-			.x_deadzone = 475,
-			.y_deadzone = 475
+			.x_deadzone = 300,
+			.y_deadzone = 300
 			
 		}
 	}

@@ -23,12 +23,12 @@ const struct ControllerConfiguration DRONE_JOYSTICK_CONFIG = {
 	.mode = BTM_JOYSTICK_ANALOG,
 	.joystick_configs = {
 		{ // LEFT JOYSTICK
-			.x_deadzone = 475,
-			.y_deadzone = 475
+			.x_deadzone = 300,
+			.y_deadzone = 300
 		},
 		{ // RIGHT JOYSTICK
-			.x_deadzone = 475,
-			.y_deadzone = 475
+			.x_deadzone = 300,
+			.y_deadzone = 300
 		}
 	}
 };

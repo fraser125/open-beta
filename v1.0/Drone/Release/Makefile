@@ -100,8 +100,6 @@ C_SRCS +=  \
 ../src/drone_keyboard_config.c \
 ../src/drone_keyboard_mouse_config.c \
 ../src/drone_ssf_arcade_config.c \
-../src/drone_ssf_gamepad_config.c \
-../src/drone_xplay_config.c \
 ../src/joysticks.c \
 ../src/ManufactureValidation.c \
 ../src/powerControl.c \
@@ -162,8 +160,6 @@ src/drone_joystick_config.o \
 src/drone_keyboard_config.o \
 src/drone_keyboard_mouse_config.o \
 src/drone_ssf_arcade_config.o \
-src/drone_ssf_gamepad_config.o \
-src/drone_xplay_config.o \
 src/joysticks.o \
 src/ManufactureValidation.o \
 src/powerControl.o \
@@ -217,8 +213,6 @@ src/drone_joystick_config.o \
 src/drone_keyboard_config.o \
 src/drone_keyboard_mouse_config.o \
 src/drone_ssf_arcade_config.o \
-src/drone_ssf_gamepad_config.o \
-src/drone_xplay_config.o \
 src/joysticks.o \
 src/ManufactureValidation.o \
 src/powerControl.o \
@@ -272,8 +266,6 @@ src/drone_joystick_config.d \
 src/drone_keyboard_config.d \
 src/drone_keyboard_mouse_config.d \
 src/drone_ssf_arcade_config.d \
-src/drone_ssf_gamepad_config.d \
-src/drone_xplay_config.d \
 src/joysticks.d \
 src/ManufactureValidation.d \
 src/powerControl.d \
@@ -327,8 +319,6 @@ src/drone_joystick_config.d \
 src/drone_keyboard_config.d \
 src/drone_keyboard_mouse_config.d \
 src/drone_ssf_arcade_config.d \
-src/drone_ssf_gamepad_config.d \
-src/drone_xplay_config.d \
 src/joysticks.d \
 src/ManufactureValidation.d \
 src/powerControl.d \
@@ -366,10 +356,6 @@ OUTPUT_FILE_DEP:= ./makedep.mk
 LIB_DEP+= 
 
 # AVR32/GNU C Compiler
-
-
-
-
 
 
 

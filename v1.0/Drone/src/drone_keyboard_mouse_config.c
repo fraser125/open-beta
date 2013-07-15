@@ -118,7 +118,7 @@ const struct ControllerConfiguration DRONE_KEYBOARD_MOUSE_CONFIG = {
 				.input_type = INPUT_TYPE_KEYBOARD
 			},
 			.button_down = {
-				.scan_code = 'y'-'a'+4
+				.scan_code = 40 // Enter
 			}
 		},
 		{ // SELECT
@@ -129,7 +129,7 @@ const struct ControllerConfiguration DRONE_KEYBOARD_MOUSE_CONFIG = {
 				.input_type = INPUT_TYPE_KEYBOARD
 			},
 			.button_down = {
-				.scan_code = 'r'-'a'+4
+				.scan_code = 41 // Escape
 			}
 		},
 		{ // RB
@@ -179,16 +179,16 @@ const struct ControllerConfiguration DRONE_KEYBOARD_MOUSE_CONFIG = {
 			.x_max = 4000,
 			.y_min = 2000,
 			.y_max = 4000,
-			.x_deadzone = 475,
-			.y_deadzone = 475
+			.x_deadzone = 300,
+			.y_deadzone = 300
 		},
 		{ // RIGHT JOYSTICK
 			.x_min = 2000,
 			.x_max = 4000,
 			.y_min = 2000,
 			.y_max = 4000,
-			.x_deadzone = 475,
-			.y_deadzone = 475
+			.x_deadzone = 300,
+			.y_deadzone = 300
 		}
 	}
 };

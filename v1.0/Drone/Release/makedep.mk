@@ -54,10 +54,6 @@ src\drone_keyboard_mouse_config.c
 
 src\drone_ssf_arcade_config.c
 
-src\drone_ssf_gamepad_config.c
-
-src\drone_xplay_config.c
-
 src\joysticks.c
 
 src\ManufactureValidation.c

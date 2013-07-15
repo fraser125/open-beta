@@ -155,14 +155,8 @@ int main (void)
 	setupLEDs(!global_header.led_G_D0_B_D1);
 
 	// Send startup message:
-	sendUSBLine("");
-	sendUSBLine("+=======+");
 	sendUSBLine("| DRONE | Version " STRINGIFY_EXPANDED(SW_VERSION));
-	sendUSBLine("+=======+");
-	sendDBGLine("");
-	sendDBGLine("+=======+");
 	sendDBGLine("| DRONE | Version " STRINGIFY_EXPANDED(SW_VERSION));
-	sendDBGLine("+=======+");
 	
 	initBTComms(global_header.bluetooth_mode_names[ccc.mode]);
 	
@@ -334,7 +328,8 @@ int main (void)
 			bt_exitBypass();
 			btClearAutoConnectList();
 			setLEDValue(LED_OFF, LED_OFF, LED_OFF);
-			delay_ms(1500);
+			setLEDValue(LED_OFF, LED_DIM, LED_OFF);
+			delay_ms(2000);
 			reset_do_soft_reset();
 		}
 		

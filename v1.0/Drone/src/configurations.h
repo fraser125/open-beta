@@ -42,7 +42,7 @@ struct GlobalHeader {
 	uint8_t red_percent;   // The intensity of the red LED (0-100)
 	uint8_t blue_percent;  // The intensity of the blue LED (0-100)
 	uint8_t green_percent; // The intensity of the green LED (0-100)
-	char bluetooth_mode_names[BTM_SIZE][16]; // The names the drone will enumerate as through bluetooth. (See enum BT_MODES)
+	char bluetooth_mode_names[1][1]; // The names the drone will enumerate as through bluetooth. (See enum BT_MODES)
 	uint8_t default_configuration :4;
 	uint8_t first_run :1;  // 1 - first run, 0 - not first run.
 	uint8_t blueSwapGreen :2; // 0 - PORTD, 0=Green and PORTD,1=Blue, 1 - PORTD,0=Blue and PORTD,1=Green
