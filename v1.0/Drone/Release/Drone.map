@@ -1848,15 +1848,15 @@ LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0xcf9
+.debug_info     0x00000000      0xd1d
  *(.debug_info)
- .debug_info    0x00000000       0x78 src/asf/xmega/drivers/cpu/ccp.o
- .debug_info    0x00000078       0x78 src/asf/xmega/drivers/nvm/nvm_asm.o
- .debug_info    0x000000f0      0x1fa c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(printf.o)
- .debug_info    0x000002ea      0x204 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(sprintf.o)
- .debug_info    0x000004ee      0x549 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o)
- .debug_info    0x00000a37      0x174 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
- .debug_info    0x00000bab      0x14e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+ .debug_info    0x00000000       0x8a src/asf/xmega/drivers/cpu/ccp.o
+ .debug_info    0x0000008a       0x8a src/asf/xmega/drivers/nvm/nvm_asm.o
+ .debug_info    0x00000114      0x1fa c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+ .debug_info    0x0000030e      0x204 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(sprintf.o)
+ .debug_info    0x00000512      0x549 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o)
+ .debug_info    0x00000a5b      0x174 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .debug_info    0x00000bcf      0x14e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avrxmega4\libc.a(iob.o)
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev   0x00000000      0x621

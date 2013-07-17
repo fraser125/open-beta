@@ -179,16 +179,16 @@ const struct ControllerConfiguration DRONE_KEYBOARD_MOUSE_CONFIG = {
 			.x_max = 4000,
 			.y_min = 2000,
 			.y_max = 4000,
-			.x_deadzone = 300,
-			.y_deadzone = 300
+			.x_deadzone = 475,
+			.y_deadzone = 475
 		},
 		{ // RIGHT JOYSTICK
 			.x_min = 2000,
 			.x_max = 4000,
 			.y_min = 2000,
 			.y_max = 4000,
-			.x_deadzone = 300,
-			.y_deadzone = 300
+			.x_deadzone = 475,
+			.y_deadzone = 475
 		}
 	}
 };
